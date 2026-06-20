@@ -2,7 +2,7 @@
 
 # NIS2 → ISO 27001:2022 Gap-Mapper
 
-CLI-Tool zur automatisierten Lückenanalyse zwischen den NIS2-Anforderungen (Art. 21) und dem Umsetzungsstatus der ISO 27001:2022 Annex-A-Controls.
+Unternehmen, die unter NIS2 fallen, müssen ihre ISO 27001:2022 Controls gegen 10 Anforderungen aus Art. 21 nachweisen – dieses Tool automatisiert genau diese Analyse. Es liest eine Excel-Datei mit dem aktuellen Umsetzungsstatus, mappt jeden Control gegen die relevante NIS2-Anforderung und gibt einen farbcodierten Gap-Report als HTML und Excel aus.
 
 ---
 
@@ -15,6 +15,12 @@ CLI-Tool zur automatisierten Lückenanalyse zwischen den NIS2-Anforderungen (Art
 ## Demo
 
 ![Demo](assets/demo.jpg)
+
+---
+
+## Report-Vorschau
+
+![Report Screenshot](assets/screenshot.jpg)
 
 ---
 
@@ -82,10 +88,15 @@ nis2-iso27001-mapper/
 ├── mapping_data.py        
 ├── create_sample.py       
 ├── requirements.txt
-├── assets/                # Bilder für README
+├── LICENSE
+├── assets/                
 ├── templates/
 │   └── report.html.j2    
 ├── sample_input/
 │   └── controls_sample.xlsx
 └── output/                # Generierte Reports (gitignored)
 ```
+
+## Lizenz
+
+MIT – siehe [LICENSE](LICENSE)
